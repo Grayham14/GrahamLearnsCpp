@@ -9,12 +9,12 @@ int ReadInput(const std::string prompt){
     {
         std::cout << prompt;
         int value{};
-        
+        //make sure only numbers get put in
         if(std::cin >> value)
         {
             return value;
         }
-        
+
         if (std::cin.eof())
         {
             std::exit(0);   // input was closed entirely (Ctrl+Z on Windows)
@@ -28,5 +28,5 @@ int ReadInput(const std::string prompt){
 
 
 int main(){
-
+    ReadInput("give me a number please");
 }
