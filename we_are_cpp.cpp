@@ -5,8 +5,13 @@
 
 int main(){
 
-    std::cout << "give me a number";
+    std::cout << "Give me a number please: ";
     int c{};
     std::cin >> c;
 
+    std::cout << "Together, we are C++";
+
+    c++; //its peak like look it did the thing
+
+    std::cout << c;
 }
