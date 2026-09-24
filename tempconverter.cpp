@@ -52,6 +52,29 @@ int ReadInputInt(const std::string prompt, const std::string errorMsg){
 
 
 int main(){
-    std::string unit = ReadInputString("Enter C for Celsius or F for Fahrenheit: ");
+    std::string unit = ReadInputString("Enter C for Celsius or F for Fahrenheit: ", "Not F or C, please only provide those values");
+    bool run = true;
+    while(run)
+    {
+        if (unit == "F")
+        {
+            int degreeF = ReadInputInt("How many degrees F? ", "Not a valid int input");
+            degreeF = (degreeF + 32) * 9/5;
+            std::cout << degreeF;
+            run = false;
+            
+        }
+        else if (unit == "C")
+        {
+            int degreeC = ReadInputInt("How many degrees C? ", "Not a valid int input");
+            degreeC = (degreeC * 9/5) + 32;
+            std::cout << degreeC;
+            run = false;
 
+        }
+        else
+        {
+            std::cout << "problem";
+        } 
+    }
 }
