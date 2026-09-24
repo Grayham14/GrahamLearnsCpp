@@ -58,17 +58,17 @@ int main(){
     {
         if (unit == "F")
         {
-            int degreeF = ReadInputInt("How many degrees F? ", "Not a valid int input");
-            degreeF = (degreeF + 32) * 9/5;
-            std::cout << degreeF;
+            double degreeF = ReadInputInt("How many degrees F? ", "Not a valid int input");
+            double degreeC = (degreeF + 32) * 9/5;
+            std::cout << degreeC;
             run = false;
             
         }
         else if (unit == "C")
         {
-            int degreeC = ReadInputInt("How many degrees C? ", "Not a valid int input");
-            degreeC = (degreeC * 9/5) + 32;
-            std::cout << degreeC;
+            double degreeC = ReadInputInt("How many degrees C? ", "Not a valid int input");
+            double degreeF = (degreeC * 9/5) + 32;
+            std::cout << degreeF;
             run = false;
 
         }
