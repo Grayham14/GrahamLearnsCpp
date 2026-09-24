@@ -1,0 +1,1 @@
+//make varible c from user input, do operation 'c++'
