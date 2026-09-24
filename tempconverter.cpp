@@ -52,6 +52,7 @@ int ReadInputInt(const std::string prompt, const std::string errorMsg){
 
 
 int main(){
+    
     std::string unit = ReadInputString("Enter C for Celsius or F for Fahrenheit: ", "Not F or C, please only provide those values");
     bool run = true;
     while(run)
